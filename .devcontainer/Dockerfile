@@ -19,6 +19,7 @@ RUN \
     vim \
     make \
     apt-file \
+    python3-pygments \
   # Create a non-root user
   && groupadd --gid $USER_GID $USERNAME \
   && useradd \
