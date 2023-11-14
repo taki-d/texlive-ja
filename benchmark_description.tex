@@ -1,0 +1,34 @@
+\documentclass[a4paper,11pt]{jsreport}
+
+\input{preamble.tex}
+
+\begin{document}
+
+\subsection{h5bench write}
+
+素粒子物理シミュレーションのI/Oパターンに基づいたVPIC-IOと，
+ビックデータのクラスタリングアルゴリズムのI/Oパターンに基づいたBDCATS-IO\cite{BDCATS}カーネルが含まれている．
+
+\begin{table}[!ht]
+  \caption{h5bench writeのオプション}
+  \centering
+
+  \begin{tabular}{|l|l|}
+  \hline
+      MEM\_PATTERN & CONTIG, INTERLEAVED, STRIDED \\ \hline
+      FILE\_PATTERN & CONTIG, STRIDED \\ \hline
+      TIMESTEPS & 繰り返しの回数 \\ \hline
+      EMULATED\_COMPUTE\_TIME\_PER\_TIMESTEP & コンピュート時間(繰り返しの間の時間) \\ \hline
+      NUM\_DIMS & 次元数 \\ \hline
+      DIM\_1 & 1次元のサイズ \\ \hline
+      DIM\_2 & 2次元のサイズ \\ \hline
+      DIM\_3 & 3次元のサイズ \\ \hline
+  \end{tabular}
+\end{table}
+
+MEM_PATTERNについて，CONTIGは基本データ型のint, float, doubleなどの配列を想定し，
+INTERLEAVEDは，array of structureを想定し，
+STRIDEDは，一定のstride幅で区切られた基本データの方のはは
+
+\end{document}
+

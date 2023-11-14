@@ -1,0 +1,90 @@
+\documentclass[a4paper,11pt]{jsreport}
+
+
+\input{preamble}
+
+%% タイトル生成用パッケージ(重要)
+\usepackage{sie-jp-sjis}
+\usepackage{docmute}
+
+%% タイトル
+%% 【注意】タイトルの最後に\\ を入れるとエラーになります
+\title{HDF5のVirtual Object Layer\\を用いたI/Oの高速化}
+%% 著者
+\author{木下 嵩裕}
+%% 学位 (2012/11 追加)
+\degree{修士（工学）}
+%% 指導教員
+\advisor{建部 修見}
+
+
+%% 専攻名 と 年月
+%% 年月は必要に応じて書き替えてください。
+\majorfield{hogehoge}\programfield{情報理工} \yearandmonth{2024年 3月}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+\thispagestyle{empty}
+\vspace*{20pt plus 1fil}
+\parindent=1zw
+\noindent
+%%
+%% 論文の概要(Abstract)
+%%
+\begin{center}
+{\bf 概要}
+\vspace{5mm}
+\end{center}
+
+%%%%%
+\par
+\vspace{0pt plus 1fil}
+\newpage
+
+\pagenumbering{roman} % I, II, III, IV 
+\tableofcontents
+\listoffigures
+%\listoftables
+
+\pagebreak \setcounter{page}{1}
+\pagenumbering{arabic} % 1,2,3
+
+\chapter{はじめに}
+
+はじめに
+
+\input{benchmark_description}
+
+
+\chapter*{謝辞}
+\addcontentsline{toc}{chapter}{\numberline{}謝辞}
+
+本研究を進めるにあたって、指導教員である筑波大学計算科学研究センター教授 建部修見先生には多大なご指導を頂きました。
+また、国内外で様々な機会を与えていただきました。
+心より感謝申し上げます。
+
+TODO 副査の先生方の名前を書く \\
+大変お忙しい中で本論文の副査を引き受けてくださりました。
+感謝申し上げます。
+
+研究室の卒業・修了生の方々、同期・後輩の皆様、また研究室の秘書を務められている桑野洋子様には、研究の議論のみならず様々な場面で大変お世話になりました。
+感謝申し上げます。
+
+最後に研究生活を支えてくれた友人と家族に深く感謝します。
+
+\newpage
+
+%\chapter*{参考文献}
+\addcontentsline{toc}{chapter}{\numberline{}参考文献}
+\renewcommand{\bibname}{参考文献}
+
+%% 参考文献に jbibtex を使う場合
+\bibliographystyle{junsrt}
+\bibliography{references}
+%% [compile] jbibtex sample; platex sample; platex sample;
+
+
+\end{document}
