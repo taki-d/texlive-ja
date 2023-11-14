@@ -1,4 +1,4 @@
-name: Docker Publish for range3/texlive-ja
+name: Docker Publish for orangeplanet/texlive-ja
 
 on:
   push:
@@ -63,5 +63,5 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=registry,ref=${{ github.repository_owner }}/texlive-ja:buildcache
-          cache-to: type=registry,ref=${{ github.repository_owner }}/texlive-ja:buildcache,mode=max
+          cache-from: type=registry,ref=orangeplanet/texlive-ja:buildcache
+          cache-to: type=registry,ref=orangeplanet/texlive-ja:buildcache,mode=max
