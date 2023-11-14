@@ -2,4 +2,4 @@
 set -eux
 
 # build pdf
-latexmk
+latexmk main.tex
