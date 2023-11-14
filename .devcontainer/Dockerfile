@@ -20,6 +20,7 @@ RUN \
     make \
     apt-file \
     python3-pygments \
+    inkscape \
   # Create a non-root user
   && groupadd --gid $USER_GID $USERNAME \
   && useradd \
