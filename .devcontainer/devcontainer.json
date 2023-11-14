@@ -4,6 +4,7 @@
   "name": "TexLive 2022 on Debian 12 (bookworm)",
   "image": "orangeplanet/texlive-ja:latest",
   // "dockerFile": "Dockerfile",
+  "runArgs": ["--platform=linux/amd64" ],
   "remoteEnv": {
     "EDITOR": "${localEnv:EDITOR}"
   },
